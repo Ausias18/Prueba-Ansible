@@ -2,3 +2,7 @@
  
 [web]
 santalucia-vm.westeurope.cloudapp.azure.com
+
+[win_vars]
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
