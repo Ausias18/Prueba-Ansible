@@ -1,7 +1,7 @@
 ---
  
 [web]
-52.178.13.30
+52.178.13.30:5985
 
 [win_vars]
 ansible_user=arqsis
