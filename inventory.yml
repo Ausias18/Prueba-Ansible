@@ -1,7 +1,7 @@
 ---
  
 [web]
-santalucia-vm.westeurope.cloudapp.azure.com
+santalucia-vm.westeurope.cloudapp.azure.com:5985
 
 [win_vars]
 ansible_connection=winrm
