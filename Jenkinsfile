@@ -2,16 +2,10 @@ pipeline {
   agent any
   
   stages {
-        stage('TF Plan') {
+        stage('Configure') {
        steps {
-           powershell 'c:\\terraform\\terraform.exe init'
-           powershell 'c:\\terraform\\terraform.exe plan -out myplan'
+           ansiblePlaybook  inventory: 'inventory.yml', playbook: 'iis'
        	      }
      			}
-	  stage('TF Apply') {
-      steps {
-         powershell 'c:\\terraform\\terraform.exe apply -input=false myplan'
-	    }
- 	 		     }
          }
 	 }
