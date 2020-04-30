@@ -4,7 +4,7 @@ pipeline {
   stages {
 	        stage('Debug') {
        steps {
-           ansiblePlaybook inventory: winhost -m win_ping
+           ansiblePlaybook inventory: 'winhost', -m win_ping
        	      }
      			}
         stage('Configure') {
