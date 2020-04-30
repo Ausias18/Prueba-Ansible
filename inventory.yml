@@ -1,8 +1,10 @@
 ---
  
 [web]
-52.178.13.30:5985
+52.178.13.30
 
 [win_vars]
+ansible_user=arqsis
+ansible_password=Password1234!
 ansible_connection=winrm
 ansible_winrm_server_cert_validation=ignore
