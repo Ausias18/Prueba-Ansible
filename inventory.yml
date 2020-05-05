@@ -1,6 +1,6 @@
 ---
 [winhost] 
-52.178.13.30
+santalucia-azurerm-resource.westeurope.cloudapp.azure.com
 
 [winhost:vars]
 ansible_user=arqsis
