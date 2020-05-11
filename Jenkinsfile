@@ -4,7 +4,7 @@ pipeline {
   stages {
         stage('Configure') {
        steps {
-           ansiblePlaybook  inventory: 'inventory.yml', playbook: 'iis-ansible.yml' -vvv
+           sh ansible-playbook -i inventory.yml iis-ansible.yml -vvv
        	      }
      			}
          }
