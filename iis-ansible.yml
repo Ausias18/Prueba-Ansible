@@ -42,8 +42,8 @@
 
   - name: create deploy staging path
     win_file: path={{ ansible_test_staging_path }} state=directory
-  - name: get code to deploy staging path
-    win_copy:
-      src: files/index.html
-      dest: "{{ ansible_test_staging_path }}"
-      creates: "{{ ansible_site_path }}\\index.html"
+#  - name: get code to deploy staging path
+#    win_copy:
+#      src: files/index.html
+#      dest: "{{ ansible_test_staging_path }}"
+#      creates: "{{ ansible_site_path }}\\index.html"
