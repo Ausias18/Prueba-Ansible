@@ -5,6 +5,7 @@ santalucia-azurerm-resource.westeurope.cloudapp.azure.com
 [winhost:vars]
 ansible_user=arqsis
 ansible_password=Password1234!
+ansible_port=5986
 ansible_connection=winrm
 ansible_winrm_server_cert_validation=ignore
 
